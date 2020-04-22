@@ -9,102 +9,96 @@ body {
   font-size: 16px;
 }
 
-nav {
-  width: 50%;
-  text-align: right;
-  padding-right: 20px;
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: aquamarine;
+  height: 60px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 5px rgb(235, 137, 26);
 }
 
 nav ul {
   list-style-type: none;
-}
-
-nav img {
-  width: 50px;
-  position: relative;
-  top: 18px;
-  border-radius: 50%;
+  display: flex;
+  align-items: center;
 }
 
 nav ul li {
-  display: inline;
-  margin-left: 5px;
-  position: relative;
-  top: -33px;
+  margin-left: 10px;
 }
 
-a {
+nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: #222;
 }
 
-header {
-  position: relative;
-  height: 60px;
-  background-color: aqua;
-}
-
-header h2 {
-  position: absolute;
-  top: -20px;
-}
 header h2 img {
-  width: 130px;
+  width: 100px;
 }
 
-header nav {
-  position: absolute;
-  right: 10px;
-  top: 5px;
+nav ul li img {
+  width: 50px;
+  border-radius: 50%;
 }
 
 main {
-  position: relative;
-  height: 650px;
-  background-color: azure;
+  display: flex;
 }
 
 #profile,
 #form {
-  position: absolute;
-  height: 100%;
-  width: 50%;
-  padding: 10px 20px;
-  text-align: center;
+  flex-basis: 50%;
 }
 
 #profile {
-  left: 0;
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
 }
-#form {
-  right: 0;
-  text-align: center;
+#user-details {
+  display: flex;
+  justify-content: space-around;
 }
 
-#user-details {
-  position: relative;
-  height: 33%;
+#form {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#user-registration-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 4px;
+  width: 80%;
+  max-width: 330px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+#user-registration-form div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
 }
 
 #photo {
-  position: absolute;
-  width: 40%;
-  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #photo img {
-  width: 60%;
-}
-
-#details {
-  position: absolute;
-  width: 60%;
-  right: 0;
-}
-
-#summary p {
-  text-align: left;
+  width: 100px;
 }
 
 #skills table,
@@ -113,21 +107,13 @@ main {
   border: 1px solid rgba(0, 0, 0, 0.4);
   padding: 5px;
 }
-skills table th {
+#skills table th {
   font-style: 1.1rem;
   font-weight: bold;
 }
 
 #skills table {
   border-collapse: collapse;
-}
-
-#user-registration-form div {
-  margin-bottom: 5px;
-  text-align: center;
-  width: 60%;
-  left: 20%;
-  position: relative;
 }
 
 input[type='text'],
@@ -168,4 +154,7 @@ input[type='reset'] {
 footer {
   background-color: aquamarine;
   padding: 10px 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
 }
