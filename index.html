@@ -2,7 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
       rel="stylesheet"
@@ -11,139 +20,193 @@
     <title>Case Study</title>
   </head>
   <body>
-    <header>
-      <h2 id="site-name"><img src="./pratian-logo.png" /></h2>
-      <nav>
-        <ul>
-          <li>
-            <img
-              src="https://images.unsplash.com/photo-1506919258185-6078bba55d2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=815&q=80"
-            />
-          </li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Sign Up</a></li>
-          <li><a href="#">About</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a href="#" id="site-name"><img src="./pratian-logo.png" /></a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Sign Up</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
         </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="profile">
-        <h2>Profile</h2>
-        <section id="user-details">
-          <section id="photo">
-            <img
-              src="https://images.unsplash.com/photo-1506919258185-6078bba55d2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=815&q=80"
-            />
-            <h4>Name of person</h4>
+      </div>
+    </nav>
+    <main class="container-fluid">
+      <div class="row">
+        <section id="profile" class="col">
+          <p class="h2">Profile</p>
+          <section id="user-details" class="row">
+            <section id="photo" class="card col m-3 p-1">
+              <img
+                class="card-img-top"
+                src="https://images.unsplash.com/photo-1506919258185-6078bba55d2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=815&q=80"
+              />
+              <div class="card-body text-center">
+                <p class="card-text">Name of person</p>
+              </div>
+            </section>
+            <section id="details" class="col p-1">
+              <div>
+                <label>College:</label> <span>Jhfjhghjgchg hgjfghjvnb</span>
+              </div>
+              <div>
+                <label>College:</label> <span>Jhfjhghjgchg hgjfghjvnb</span>
+              </div>
+              <div>
+                <label>College:</label> <span>Jhfjhghjgchg hgjfghjvnb</span>
+              </div>
+              <div>
+                <label>College:</label> <span>Jhfjhghjgchg hgjfghjvnb</span>
+              </div>
+            </section>
           </section>
-          <section id="details">
-            <div>
-              <label>College:</label> <span>Jhfjhghjgchg hgjfghjvnb</span>
-            </div>
-            <div>
-              <label>College:</label> <span>Jhfjhghjgchg hgjfghjvnb</span>
-            </div>
-            <div>
-              <label>College:</label> <span>Jhfjhghjgchg hgjfghjvnb</span>
-            </div>
-            <div>
-              <label>College:</label> <span>Jhfjhghjgchg hgjfghjvnb</span>
-            </div>
+          <section id="summary">
+            <h3>Profile Summary</h3>
+            <p>
+              KHJGJHcfgkjhgc kbhvb bvjkbhvbh hbnvbmn dsfsfdfdsdgs sdfsfdfds
+              KHJGJHcfgkjhgc kbhvb bvjkbhvbh hbnvbmn dsfsfdfdsdgs sdfsfdfds
+              KHJGJHcfgkjhgc kbhvb bvjkbhvbh hbnvbmn dsfsfdfdsdgs sdfsfdfds
+              KHJGJHcfgkjhgc kbhvb bvjkbhvbh hbnvbmn dsfsfdfdsdgs sdfsfdfds
+              KHJGJHcfgkjhgc kbhvb bvjkbhvbh hbnvbmn dsfsfdfdsdgs sdfsfdfds
+            </p>
+          </section>
+          <section id="skills">
+            <h3>Skills</h3>
+            <table
+              class="table table-dark table-bordered text-center table-hover table-sm"
+            >
+              <tr>
+                <th>HTML</th>
+                <td>Beginner</td>
+              </tr>
+              <tr>
+                <th>CSS</th>
+                <td>Beginner</td>
+              </tr>
+              <tr>
+                <th>JS</th>
+                <td>Advanced</td>
+              </tr>
+            </table>
           </section>
         </section>
-        <section id="summary">
-          <h3>Profile Summary</h3>
-          <p>
-            KHJGJHcfgkjhgc kbhvb bvjkbhvbh hbnvbmn dsfsfdfdsdgs sdfsfdfds
-            KHJGJHcfgkjhgc kbhvb bvjkbhvbh hbnvbmn dsfsfdfdsdgs sdfsfdfds
-            KHJGJHcfgkjhgc kbhvb bvjkbhvbh hbnvbmn dsfsfdfdsdgs sdfsfdfds
-            KHJGJHcfgkjhgc kbhvb bvjkbhvbh hbnvbmn dsfsfdfdsdgs sdfsfdfds
-            KHJGJHcfgkjhgc kbhvb bvjkbhvbh hbnvbmn dsfsfdfdsdgs sdfsfdfds
-          </p>
+        <section id="form" class="col">
+          <h2>Registration Form</h2>
+          <form id="user-registration-form" class="px-5">
+            <div class="form-group">
+              <label for="name" aria-label="Name of the user">Name:</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="useremail">Email:</label>
+              <input
+                type="email"
+                id="useremail"
+                class="form-control"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="age">Age:</label>
+              <input
+                type="number"
+                id="age"
+                min="16"
+                max="85"
+                class="form-control"
+                placeholder="Enter your age"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input
+                type="password"
+                id="password"
+                class="form-control"
+                placeholder="Enter a password"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="city">City:</label>
+              <select id="city" class="form-control">
+                <option value="bangalore">Bangalore</option>
+                <option value="chennai">Chennai</option>
+                <option value="hyd">Hyderabad</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="address">Address:</label>
+              <textarea
+                id="address"
+                class="form-control"
+                cols="10"
+                rows="3"
+              ></textarea>
+            </div>
+            <div>
+              <label>Gender:</label>
+              <div class="form-check-inline">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  name="gender"
+                  value="male"
+                  id="maleradio"
+                />
+                <label class="form-check-label" for="maleradio">
+                  Male
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  name="gender"
+                  value="female"
+                  id="femaleradio"
+                />
+                <label class="form-check-label" for="femaleradio">
+                  Female
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  name="gender"
+                  value="others"
+                  id="otherradio"
+                />
+                <label class="form-check-label" for="otherradio">
+                  Other
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <input
+                type="submit"
+                class="btn btn-primary mr-5"
+                value="Register"
+                role="button"
+              />
+              <input
+                type="reset"
+                class="btn btn-danger"
+                value="Reset"
+                role="button"
+              />
+            </div>
+          </form>
         </section>
-        <section id="skills">
-          <h3>Skills</h3>
-          <table>
-            <tr>
-              <th>HTML</th>
-              <td>Beginner</td>
-            </tr>
-            <tr>
-              <th>CSS</th>
-              <td>Beginner</td>
-            </tr>
-            <tr>
-              <th>JS</th>
-              <td>Advanced</td>
-            </tr>
-          </table>
-        </section>
-      </section>
-      <section id="form">
-        <h2>Registration Form</h2>
-        <form id="user-registration-form">
-          <div>
-            <label for="name" aria-label="Name of the user">Name:</label>
-            <input
-              type="text"
-              id="name"
-              placeholder="Enter your name"
-              required
-            />
-          </div>
-          <div>
-            <label for="useremail">Email:</label>
-            <input
-              type="email"
-              id="useremail"
-              placeholder="Enter your email"
-              required
-            />
-          </div>
-          <div>
-            <label for="age">Age:</label>
-            <input
-              type="number"
-              id="age"
-              min="16"
-              max="85"
-              placeholder="Enter your age"
-              required
-            />
-          </div>
-          <div>
-            <label for="password">Password:</label>
-            <input
-              type="password"
-              id="password"
-              placeholder="Enter a password"
-              required
-            />
-          </div>
-          <div>
-            <label for="city">City:</label>
-            <select id="city">
-              <option value="bangalore">Bangalore</option>
-              <option value="chennai">Chennai</option>
-              <option value="hyd">Hyderabad</option>
-            </select>
-          </div>
-          <div>
-            <label for="address">Address:</label>
-            <textarea id="address" cols="10" rows="3"></textarea>
-          </div>
-          <div>
-            <label for="gender">Gender:</label>
-            <input type="radio" name="gender" value="male" /> Male
-            <input type="radio" name="gender" value="female" /> Female
-            <input type="radio" name="gender" value="others" /> Others
-          </div>
-          <div style="display: flex; flex-direction: row-reverse;">
-            <input type="submit" value="Register" role="button" />
-            <input type="reset" value="Reset" role="button" />
-          </div>
-        </form>
-      </section>
+      </div>
     </main>
     <footer>
       <p>Copyright 2020</p>
